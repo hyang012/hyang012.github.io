@@ -3,12 +3,58 @@
 <head>
 	<meta charset="utf-8">
     <title>HTML Structure</title>
+    <style>
+    
+    /*container holding the text and the image*/
+    .container {
+    	position: relative;
+    	text-align: center;
+    	color: white;
+    	font-family: monospace;
+    	font-size: 300%;
+    	white-space: nowrap;
+    }
+
+    /*centered text*/
+    .centered {
+    	position: absolute;
+    	top: 50%;
+    	left: 51%;
+    	transform: translate(-50%, -50%);
+    	font-family: "Comic Sans MS", serif;
+    }
+
+    /*background image*/
+    .image {
+    	height: 100%;
+    	width: 100%;
+    	opacity: 0.7;
+    }
+
+    /*about me block*/
+    .about-me {
+    	font-family : Helvetica, serif;
+    	text-align: justify;
+    	text-align-last: center;
+    	line-height: 20px;
+    }
+
+    /*about me title*/
+    .about-me-title {
+    	font-size: 120%;
+    }
+	</style>
 </head>
+
 <body>
-	<h1>Hongfei Yang</h1>
-	<div>Thank you for visting my website!</div>
-	<p>
-		About Me - My name is Hongfei Yang, I am a passionate future Data Scientist/Engineer. I have industry experience in working as a Data Scientist in an Ad-Tech comapny in Seattle. The company is a SaaS company which provides automated and AI Advertising Services on Facebook. The company's clients include top real-estate companies, $40 Billion e-commerce website, etc. My responsibilities there mainly include Machine Learning Modeling and Ad-hoc Data Analysis. Currently, I am pursuing my Master degree in Data Science/Business Analytics at the Seattle University with a 3.89 GPA. I also hold a degree in Math from the University of Washington with a 3.73 GPA. My curriculums focus in Machine Learning, Statistics, Programming, Big Data Analytics, Data Visualization and Communication etc.
-	</p>
+	<div class="container">
+		<img class="image"src="Background.png" alt="background image">
+		<div class="centered"><strong>Hi, I am Derek. A Data Lover and Engineer.</strong></div>
+	</div>
+
+	<div class="about-me">
+		<p class="about-me-title"><Strong>About Me</Strong></p>
+		<p class="about-me-content">My name is Hongfei Yang, I am a passionate future Data Scientist/Engineer. I have industry experience in working as a Data Scientist in an Ad-Tech comapny in Seattle. The company is a SaaS company which provides automated and AI Advertising Services on Facebook. The company's clients include top real-estate companies, $40 Billion e-commerce website, etc. My responsibilities there mainly include <strong>Machine Learning Modeling</strong> and <strong>Ad-hoc Data Analysis</strong>. Currently, I am pursuing my Master degree in Data Science/Business Analytics at the Seattle University with a <strong>3.89</strong> GPA. I also hold a degree in Math from the University of Washington with a <strong>3.73</strong> GPA. My curriculums focus in Machine Learning, Statistics, Programming, Big Data Analytics, Data Visualization and Communication etc.</p>
+	</div>
   </body>
 </html>
