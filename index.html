@@ -2,74 +2,87 @@
 <html lang='en'>
 <head>
 	<meta charset="utf-8">
-    <title>HTML Structure</title>
+    <Title>HTML Structure</Title>
     <style>
+        header {
+            text-align: center;
+            color: white;
+            background: url('Background.png');
+            background-size: cover;
+            padding: 200px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            margin: 0px 0px 50px 0px;
+        }
+        h1 {
+            font-size: 55px;
+            padding: 0px 0px 20px 0px;
+        }
+        ul {
+            font-size: 18px;
+        }
+        .white {
+            color:white;
+        }
+        li {
+            font-weight: bold;
+            list-style-type: none;
+            margin: 10px 15px 10px 15px;
+            display: inline;
 
-    body {background-color: FloralWhite;}
-    
-    /*container holding the text and the image*/
-    .container {
-    	position: relative;
-    	text-align: center;
-    	color: white;
-    	font-family: monospace;
-    	font-size: 300%;
-    	white-space: nowrap;
-    }
-
-    /*centered text*/
-    .centered {
-    	position: absolute;
-    	top: 50%;
-    	left: 51%;
-    	transform: translate(-50%, -50%);
-    	font-family: "Comic Sans MS", serif;
-    }
-
-    /*background image*/
-    .image {
-    	height: 100%;
-    	width: 100%;
-    	opacity: 0.7;
-    }
-
-    /*content block*/
-    .content {
-    	font-family : "Verdana", serif;
-    	text-align: justify;
-    	text-align-last: center;
-    	line-height: 20px;
-    }
-
-    /*about me content*/
-
-    /*.about-me-content {
-    	height: 100px;
-    	width: 1200px;
-    }*/
-
-
+        }
+        article {
+            text-align: center;
+            font-size: 20px;
+            font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            width: 800px;
+            margin: 0 auto;
+        }
+        .green{
+            color: rgb(65, 150, 145);
+        }
 	</style>
 </head>
-
 <body>
-	<div class="container">
-		<img class="image"src="Background.png" alt="background image">
-		<div class="centered"><strong>Hi, I am Derek. A Data Lover and Engineer.</strong></div>
-	</div>
-
-	<div class="content">
-
-		<p class="about-me-title"><Strong>About Me</Strong></p>
-		<p class="about-me-content">I am Derek, a passionate future Data Scientist/Engineer. I have industry experience in working as a Data Scientist at an Ad-Tech comapny in Seattle. My responsibilities there mainly include performing Machine Learning Modeling for online advertising and conducting Ad-hoc Data Analysis for internal/external stakeholders. On the other hand, I also have a lot of project experinece in leveraging data to solve real-world business problems for companies such as the <i>International Hotel Group</i>, <i>Zillow</i> and <i>Microsoft</i> etc. Currently, I am pursuing my Master degree in Data Science/Business Analytics at the Seattle University with a 3.89 GPA. I also hold a degree in Math from the University of Washington with a 3.73 GPA. My curriculums focus in Machine Learning, Statistics, Programming, Big Data Analytics and Data Visualization etc.</p> 
-
-		<p><Strong>Skills</Strong></p>
-		<p class="skills"><em>Languages</em>: R, Python, Java, SQL, HTML, CSS<br><em>Tools</em>: Tableau, Power BI, MongoDB, Google Analytics, Git & Github<br><em>Big Data Framework</em>: MapReduce, Hadoop, Spark<br><em>OS</em>: Linux, Mac</p>
-
-		<p><Strong>Selected Projects</Strong></p>
-
-	</div>
-  
-
+    <header class="white">
+        <h1>Hi! I am Derek, <br>a data science enthusiast.</h1>
+        <ul>
+            <li><a href="#About Me" class="white">About Me</a></li>
+            <li><a href="#Projects" class="white">Projects</a></li>
+            <li><a href="#Skills" class="white">Skills</a></li>
+            <li><a href="#Links" class="white">Links</a></li>
+        </ul>
+    </header>
+    <article>
+        <a id="About Me"></a>
+        <p><Strong><font size="6">About Me</font></Strong></p>
+        <p>I am a <strong><i>Data Scientist</i></strong>... I am currently pursuing my Masters degree in Business Analytics (Data Science) at the Seattle University. I also have industry experience in working as a Data Scientist at an ad-tech company in Seattle.</p>
+        <p>I am a <strong><i>Coder</i></strong>... I received my Bachelors from the University of Washington in Mathematics. I like coding, writing algorithms and solving problems.</p>
+        <p>I am a <strong><i>Kaggler</i></strong>... I like competing in Machine Learning contests on Kaggle in all kinds of fields such as classfication, regression, text mining or recommendation system.</p>
+    </article>
+    <article>
+        <a id="Projects"></a>
+	   <p><font size="6"><Strong>Projects</Strong></font></p>
+    </article>
+    <article>
+        <a id="Skills"></a>
+       <p><font size="6"><Strong>Skills</Strong></font></p>
+       <p class="skills">
+            <strong>Programming Languages</strong>: Python, Java, R<br>
+            <strong>Database</strong>: MySQL, NoSQL MongoDB<br>
+            <strong>Web Development</strong>: HTML, CSS<br>
+            <strong>Data Visualization</strong>: D3.js, Tableau, PowerBI<br>
+            <strong>Big Data Framework</strong>: MapReduce, Hadoop, Spark<br>
+            <strong>OS</strong>: Linux
+        </p>
+    </article>
+    <article>
+        <a id="Links"></a>
+        <p><font size="6"><Strong>Links</Strong></font></p>
+        <p>
+            <a href="https://www.linkedin.com/in/hongfeiyang/" class="green">LinkedIn</a><br>
+            <a href="https://www.kaggle.com/derekyang24" class="green">Kaggle</a><br>
+            <a href="https://github.com/hyang012" class="green">Github</a><br>
+        </p>
+    </article>
   </body>
 </html>
